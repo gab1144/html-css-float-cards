@@ -76,6 +76,7 @@ h1, p {
   padding-left: 10px;
   font-size: 0.7em;
   width: auto;
+  position:absolute;
 }
 
 .row .col .container-f img{
