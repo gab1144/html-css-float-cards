@@ -16,11 +16,12 @@ h1 {
 p {
   text-align: center;
 }
+
 h1, p {
   margin-top: 50px;
 }
 
-.container{
+.container {
   width: 70%;
   margin: auto;
 }
@@ -30,20 +31,34 @@ h1, p {
   margin-top: 75px;
 }
 
-.clearfix::after{
+.clearfix::after {
   content:'';
   display: table;
   clear:both;
 }
 
 .row .col {
-  background-color: black; /*colore sfondo solo per prova*/
   width: calc(100% / 3);
   height: 150px;
   float: left;
 }
 
-.row .col:not(:first-child, :last-child) {
-  background-color: blue; /*colore sfondo solo per prova*/
+.row .col .container-f {
+  background-color:black;
+  width: auto;
+  height: 100%;
+  color: white;
 }
 
+.row .col:not(:first-child, :last-child) .container-f {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.row .col:first-child .container-f {
+  margin-right: 5%;
+}
+
+.row .col:last-child .container-f {
+  margin-left: 5%;
+}
