@@ -16,8 +16,34 @@ h1 {
 p {
   text-align: center;
 }
+h1, p {
+  margin-top: 50px;
+}
 
 .container{
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
+
+.row {
+  margin-bottom: 75px;
+  margin-top: 75px;
+}
+
+.clearfix::after{
+  content:'';
+  display: table;
+  clear:both;
+}
+
+.row .col {
+  background-color: black; /*colore sfondo solo per prova*/
+  width: calc(100% / 3);
+  height: 150px;
+  float: left;
+}
+
+.row .col:not(:first-child, :last-child) {
+  background-color: blue; /*colore sfondo solo per prova*/
+}
+
